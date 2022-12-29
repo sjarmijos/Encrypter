@@ -1,0 +1,102 @@
+@media(min-width:200px) and (max-width: 600px) {
+    .input-text {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 5%;
+    }
+
+    .output-text {
+        margin: 5rem auto;
+        min-height: 700px;
+        background-color: #fff;
+        width: 80%;
+        padding: 2%;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    .final-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        margin: 15px;
+    }
+
+    .encrypt-button {
+        margin-bottom: 1rem;
+    }
+
+    .copy-button,
+    .decrypt-button,
+    .encrypt-button {
+        width: 230px;
+        height: 47px;   
+    }
+    .copy-button{
+        margin-left: 12.5%;
+    }
+
+}
+
+@media (min-width:601px) and (max-width: 768px){
+    .input-text {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 5%;
+    }
+    .output-text {
+        margin: 3rem 0 0 0;
+        min-height: 700px;
+        background-color: #fff;
+        width: 80%;
+        padding: 2%;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .copy-button,
+    .decrypt-button,
+    .encrypt-button {
+        width: 230px;
+        height: 47px;
+    }
+    .encrypt-button {
+        margin-bottom: 1rem;
+    }
+    .copy-button{
+        margin-left: 25%;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+    .input-text {
+        display: flex;
+        width: 40%;
+        margin: auto;
+        padding: 5%;
+    }
+    .output-text {
+        margin: 3rem 0 0 0;
+        min-height: 700px;
+        background-color: #fff;
+        width: 30%;
+        padding: 2%;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .decrypt-button,
+    .encrypt-button {
+        width: 230px;
+        height: 47px;
+    }
+    .encrypt-button {
+        margin-bottom: 1rem;
+    }
+    .copy-button{
+        width: 45%;
+        height: 47px;
+        margin-left: 25%;
+    }
+}
