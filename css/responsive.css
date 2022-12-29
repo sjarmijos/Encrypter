@@ -1,4 +1,4 @@
-@media(min-width:200px) and (max-width: 600px) {
+@media(min-width:100px) and (max-width: 600px) {
     .input-text {
         display: flex;
         width: 80%;
