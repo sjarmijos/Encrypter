@@ -13,6 +13,24 @@ copiar.addEventListener('click', async (event) => {
 })
 
 
+function validarMinusculas(letra) {
+    let invalidos = [
+        "A", "B", "C", "D", "E",
+        "F", "G", "H", "I", "J",
+        "K", "L", "M", "N", "O",
+        "P", "Q", "R", "S", "T",
+        "U", "V", "X", "Y", "Z",
+        "Á", "É", "Í", "Ó", "Ú",
+        "á", "é", "í", "ó", "ú"
+    ];
+    for (let j = 0; j < invalidos.length; j++) {
+        if (letra === invalidos[j]) {
+            alert("El caractér " + invalidos[j] + " es invalido, recuerde ingresar solo letras minúsculas y sin acentos");
+            return true;
+        }
+    }
+}
+
 function imprimir(msg) {
     finalText.innerHTML = msg;
     graph.style.display = "none";
@@ -30,11 +48,15 @@ function encrypt() {
     let msg = document.getElementById('text-in').value;
     let letter = "";
     let msgEncrypted = "";
+    let validador = true;
 
     for (let i = 0; i < msg.length; i++) {
         letter = msg.charAt(i);
 
-        if (letter == "a") msgEncrypted = msgEncrypted + "ai"
+        if(validarMinusculas(letter)){
+            validador = false;
+            break;
+        }else if (letter == "a") msgEncrypted = msgEncrypted + "ai"
         else {
             if (letter == "e") msgEncrypted = msgEncrypted + "enter"
             else {
@@ -48,19 +70,24 @@ function encrypt() {
                 }
             }
         }
-    }
-    imprimir(msgEncrypted);
+    } 
+    if(validador) imprimir(msgEncrypted);
+
 }
 
 function decrypt() {
     let msg = document.getElementById('text-in').value;
     let letter = "";
     let msgDecrypted = "";
+    let validador = true;
 
     for (let i = 0; i < msg.length; i++) {
         letter = msg.charAt(i);
 
-        if (letter == "a") {
+        if(validarMinusculas(letter)){
+            validador = false;
+            break;
+        }else if (letter == "a") {
             msgDecrypted = msgDecrypted + "a"
             i = i + 1;
         }
@@ -90,7 +117,7 @@ function decrypt() {
             }
         }
     }
-    imprimir(msgDecrypted);
+    if(validador) imprimir(msgDecrypted);
 }
 
 encryptButton.onclick = encrypt;
