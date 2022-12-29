@@ -1,0 +1,490 @@
+* {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+/* Estilo Barra de navegación */
+.navbar {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 15px;
+}
+.logo{
+    position: absolute;
+    left: 10%;
+}
+.logoNav {
+    text-decoration: none;
+    color: #3757d5;
+}
+.logoNav h1{
+    font-weight: 750;
+}
+.navegacion{
+    position: absolute;
+    right: 6%;
+}
+
+.linksNav {
+    list-style-type: none;
+}
+.linksNav li {
+    display: inline;
+    padding: 35px;
+}
+.linksNav li a{
+    text-decoration: none;
+    color: #6d7b93;
+}
+.botonNav{
+    color: #fff;
+    background-color: #3858d5;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 5px 5px #3857d549;
+    font-size: 22px;
+    font-weight: bold;
+}
+/*Fin estilos barra de navegación*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos info principal*/
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -10;
+}
+.texto{
+    width: 45%;
+    padding-left: 14%;
+    padding-top: 3.5%;
+}
+.texto h2{
+    font-size: 90px;
+    color: #1f3e72;
+    margin-bottom: 0;
+}
+.texto .txt1{
+    font-size: 29px;
+    color: #6d7b93;
+    font-weight: 600;
+}
+
+.icoInfo{
+    list-style-type: none;
+    font-size: 20px;
+    color: #1f3e72;
+    padding: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 600;
+}
+.icoInfo li{
+    display: inline;
+    font-size: 20px;
+    padding: 4%;
+}
+.imagen{
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+.imagen img{
+    height: 90vh;
+    width: 100%;
+}
+
+.formulario{
+    background-color: #fbfcfe;
+    width: 70%;
+    margin-left: 10%;
+    box-shadow: 5px 5px #0000000e;
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendario{
+    font-size: 24px;
+    color: #1f3e72;
+    font-weight: 600;
+}
+.formulario form{
+    padding: 15px;
+    padding-left: 5%;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divLocation, .divFecha, 
+.divTipo{
+    width: 20%;
+    padding: 10px;
+}
+.divBoton{
+    width: 20%;
+    padding-left: 10%;
+    padding-top: 10px;
+}
+.botonForm{
+    color: #fff;
+    background-color: #3858d5;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 5px 5px #3857d549;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pLocation{
+    font-size: 24px;
+    color: #6d7b93;
+}
+.pDate{
+    font-size: 24px;
+    color: #6d7b93;
+}
+.pType{
+    font-size: 24px;
+    color: #6d7b93;
+}
+
+.location{
+    font-size: 24px;
+    color: #1f3e72;
+}
+.location option{
+    font-size: 24px;
+}
+.fecha{
+    font-size: 24px;
+    color: #1f3e72;
+}
+.tipo{
+    font-size: 24px;
+    color: #1f3e72;
+}
+.tipo option{
+    font-size: 24px;
+}
+/*Fin estilos info principal*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos logos*/
+
+.logosVaccines{
+    width: 100%;
+    padding-top: 100px;
+    align-items: center;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.astrazeneca,.sinovac,
+.pfizer,.moderna{
+    width: 20%;
+    text-align: center;
+    opacity: 0.13;
+}
+.imgOpaca{
+    width: 70%;
+}
+
+/*Fin Estilos logos*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos razones*/
+.razones{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.texto-razones{
+    width: 40%;
+    padding-left: 11%;
+}
+.texto-razones h2{
+    font-size: 60px;
+    color: #1f3e72;
+}
+.texto-razones .txt-intro-razones{
+    font-size: 26px;
+    color: #6d7b93;
+    font-weight: 500;
+}
+
+.cajas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cajas h3{
+    font-size: 28px;
+}
+.razon1, .razon2,
+.razon3, .razon4{
+    width: 16%;
+    height: 300px;
+    padding: 30px;
+    box-shadow: 10px 10px #0000000e;
+}
+
+/*Fin estilos razones*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos preparaciones*/
+.preparaciones{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagenPreparaciones{
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: auto;
+}
+.imagenPreparaciones img{
+    height: 90vh;
+    width: 100%;
+}
+.textoPreparaciones{
+    margin-left: 50%;
+    width: 40%;
+}
+.textoPreparaciones h2{
+    font-size: 55px;
+    color: #1f3e72;
+}
+.textoPreparaciones .txtIntroPreparaciones{
+    font-size: 24px;
+    color: #6d7b93;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.acordeon{
+    width: 750px;
+    margin-left: 50%;
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+}
+.acordeon .item{
+    position: relative;
+    margin: 5px 10px;
+}
+
+.acordeon .etiqueta {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f3e72;
+    cursor: pointer;
+  }
+  .acordeon .etiqueta::before {
+    content: '+';
+    color: #1f3e72;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  .acordeon .contenido {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .acordeon .item.activa .contenido {
+    height: 150px;
+    box-shadow: 10px 10px #0000001e;
+  }
+  .acordeon .item.activa .etiqueta::before {
+    content: '-';
+  }
+  .contenido p{
+    padding: 10px;
+  }
+/*Fin estilos preparaciones*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos Contacto Emergencia*/
+.contact{
+    width: 100%;
+    padding-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+.txtContacto{
+    width: 50%;
+    padding-left: 11%;
+}
+.txtContacto h2{
+    font-size: 60px;
+    color: #1f3e72;
+    margin-bottom: 0;
+}
+.txtContacto .txtIntroContacto{
+    font-size: 24px;
+    color: #6d7b93;
+    font-weight: 600;
+}
+.imgContacto{
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+.imgContacto img{
+    height: 90vh;
+    width: 100%;
+}
+.tarjetasContactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+.tarjeta1, .tarjeta2,
+.tarjeta3, .tarjeta4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 150px;
+    padding: 40px;
+    font-size: 18px; 
+}
+.infotarjeta{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icoLogo{
+    width: 10%;
+}
+.txt-ico{
+    width: 50%;
+}
+.btn{
+    width: 50%;
+}
+.btn-tarjetas{
+    width: 100%;
+    height: 40px;
+    background-color: #f1f5ff;
+    color: #3252d0;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn-tarjetas:hover{
+    background-color: #3252d0;
+    color: #f1f5ff;
+    box-shadow: 10px 10px #0000001e;
+    transition: 0.5s;
+}
+/*Fin estilos Contacto Emergencia*/
+
+/*----------------------------------------------------------*/
+
+/*Estilos Footer Emergencia*/
+.footer{
+    width: 100%;
+    background-color: #eef3ff;
+}
+.navFooter{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 14%;
+}
+.disclaimer{
+    padding-right: 40%;
+    width: 15%;
+}
+.about, .company, 
+.support{
+    padding-right: 45px;
+}
+.navFooter h2{
+    font-size: 24px;
+    color: #1f3e72;
+}
+.disclaimer h2{
+    font-size: 24px;
+    color: #2b4bc9;
+}
+.navFooter ul{
+    list-style-type: none;
+    padding: 0;
+}
+.navFooter ul li{
+    margin: auto;
+    padding: 15px;
+}
+.pDisclaimer{
+    font-size: 18px;
+    font-weight: bold;
+    color: #7e8ca2;
+}
+
+.copyrigth{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.copyrigth a{
+    text-decoration: none;
+    color: #7e8ca2;
+    font-size: 16px;
+    font-weight: 500;
+}
+.fechaCopy{
+    margin-left: 14%;
+    padding-right: 45%;
+}
+
+/*Fin estilos Footer Emergencia*/
+
+
