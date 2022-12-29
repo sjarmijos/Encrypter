@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunación</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logoNav">
+                <h1>Vaccination</h1>
+            </a>
+        </div>
+        <div class="navegacion">
+            <ul class="linksNav">
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Regulation</a></li>
+                <li><button class="botonNav" onclick="alert('Clic detectado')">Hoax Buster</button></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="info">
+        <div class="texto">
+            <h2>Fight Virus With Vaccines</h2>
+            <p class="txt1">
+                Let's stop this pandemic by killing the virus with a vaccine, don't
+                let yourself and your family get infected.
+            </p>
+            <ul class="icoInfo">
+                <li>
+                    <img src="./img/proteger.png" alt="img proteccion" width="3%">
+                </li>
+                Best protection
+                <li>
+                    <img src="./img/favorito.png" alt="img seleccionVacunas" width="3%">
+                </li>
+                Selected Vaccines
+            </ul>
+            <p class="calendario">
+                <img src="./img/reloj.png" alt="img horario" width="3%">
+                Schedule your Vaccination
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="./img/imgEnfermera.png" alt="img Enfermera">
+        </div>
+    </section>
+
+    <section class="formulario">
+        <form action="">
+            <div class="contenedor">
+                <div class="divLocation">
+                    <label for="location" class="pLocation">
+                        <img src="./img/gps.png" alt="ico GPS" width="10%">
+                        Location
+                    </label> <br>
+                    <select name="location" id="location" class="location">
+                        <option value="Quito">Quito</option>
+                        <option value="Cuenca">Cuenca</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Ambato">Ambato</option>
+                        <option value="Salcedo">Salcedo</option>
+                    </select>
+                </div>
+                <div class="divFecha">
+                    <label for="fecha" class="pDate">
+                        <img src="./img/calendario.png" alt="ico Date" width="10%">
+                        Date
+                    </label> <br>
+                    <input type="date" name="fecha" id="fecha" class="fecha">
+                </div>
+                <div class="divTipo">
+                    <label for="tipo" class="pType">
+                        <img src="./img/boligrafo.png" alt="ico Type" width="10%">
+                        Vaccine Type
+                    </label> <br>
+                    <select name="tipo" id="tipo" class="tipo">
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Sinovac">Sinovac</option>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Moderna">Moderna</option>
+                    </select>
+                </div>
+                <div class="divBoton">
+                    <button type="submit" class="botonForm">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <setion class="logosVaccines">
+        <div class="logos">
+            <div class="astrazeneca">
+                <img src="./img/AstrazenecaLogo.png" alt="Logo Astrazeneca" class="imgOpaca">
+            </div>
+            <div class="sinovac">
+                <img src="./img/LogoSinovac.png" alt="Logo Sinovac" class="imgOpaca">
+            </div>
+            <div class="pfizer">
+                <img src="./img/LogoPfizer.png" alt="Logo Pfizer" class="imgOpaca">
+            </div>
+            <div class="moderna">
+                <img src="./img/LogoModerna.png" alt="Logo Moderna" class="imgOpaca">
+            </div>
+        </div>
+    </setion>
+
+    <section class="razones">
+        <div class="texto-razones">
+            <h2>Why should I vaccine?</h2>
+            <p class="txt-intro-razones">
+                In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of
+                COVID-19 Vaccination:
+            </p>
+        </div>
+        <div class="cajas">
+            <div class="razon1">
+                <img src="./img/list.png" alt="ico lista" width="15%">
+                <h3>Minimize the spread of viruses</h3>
+                <p>
+                    Vaccine has been proven effective to prevent someone from getting infected with Coronavirus
+                </p>
+            </div>
+            <div class="razon2">
+                <img src="./img/shield.png" alt="ico escudo" width="15%">
+                <h3>Forming antibodies</h3>
+                <p>
+                    COVID-19 vaccine proven to help shape antibody response form inmune system
+                </p>
+            </div>
+            <div class="razon3">
+                <img src="./img/users.png" alt="ico familiares" width="19%">
+                <h3>Protecting people nearby</h3>
+                <p>
+                    The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around
+                    us
+                </p>
+            </div>
+            <div class="razon4">
+                <img src="./img/barras.png" alt="ico inmunidadgrupal" width="15%">
+                <h3>Creating group inmunity</h3>
+                <p>
+                    COVID-19 vaccination is also beneficial for creating group immunity or herd immunity
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="preparaciones">
+        <div class="imagenPreparaciones">
+            <img src="./img/Preparaciones.png" alt="img preparaciones">
+        </div>
+        <div class="textoPreparaciones">
+            <h2>Preparations Before Vaccine</h2>
+            <p class="txtIntroPreparaciones">
+                The success of vaccines is strongly influenced by the strength of the body's immune system. Therefore,
+                there are several things that can be tried to make the COVID-19 vaccine work:
+            </p>
+        </div>
+        <div class="acordeon">
+            <div class="item">
+                <div class="etiqueta">
+                    <img src="./img/error.png" alt="ico Alcoholic" width="5%">
+                    Avoid alcoholic beverages
+                </div>
+                <div class="contenido">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate praesentium repellat non
+                        dignissimos, illum, laborum nemo quae ratione ad voluptatum minus dolore consectetur ut vero at,
+                        temporibus aliquid doloremque eius.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="etiqueta">
+                    <img src="./img/cancelar.png" alt="ico stress" width="5%">
+                    Avoid stress
+                </div>
+                <div class="contenido">
+                    <p>
+                        Stress has a profound effect on inmune work. <br>
+                        Moreover, prolonged stress can increase cortisol production and oxidative stress in the boddy.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="etiqueta">
+                    <img src="./img/healthyfood.png" alt="ico healthy food" width="5%">
+                    Eat healthy food
+                </div>
+                <div class="contenido">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate praesentium repellat non
+                        dignissimos, illum, laborum nemo quae ratione ad voluptatum minus dolore consectetur ut vero at,
+                        temporibus aliquid doloremque eius.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="etiqueta">
+                    <img src="./img/comprobar.png" alt="ico sleep" width="5%">
+                    Get enough sleep
+                </div>
+                <div class="contenido">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate praesentium repellat non
+                        dignissimos, illum, laborum nemo quae ratione ad voluptatum minus dolore consectetur ut vero at,
+                        temporibus aliquid doloremque eius.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="etiqueta">
+                    <img src="./img/corazon.png" alt="ico activity" width="5%">
+                    Exercise or physical activity
+                </div>
+                <div class="contenido">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate praesentium repellat non
+                        dignissimos, illum, laborum nemo quae ratione ad voluptatum minus dolore consectetur ut vero at,
+                        temporibus aliquid doloremque eius.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="txtContacto">
+            <h2>Emergency Contact</h2>
+            <p class="txtIntroContacto">
+                Contact one of the contacts below if you or your famili feel unwell an have similar sympthoms such as
+                COVID-19, make sure you also take care of yourself before reporting to us:
+            </p>
+            <div class="tarjetasContactos">
+                <div class="tarjeta1">
+                    <div class="infotarjeta">
+                        <div class="icoLogo">
+                            <img src="./img/call.png" alt="ico call" width="80%">
+                        </div>
+                        <div class="txt-num">
+                            Chat <br> 021.123.145.14
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-tarjetas">
+                            Call Now
+                        </button>
+                    </div>
+                </div>
+                <div class="tarjeta2">
+                    <div class="infotarjeta">
+                        <div class="icoLogo">
+                            <img src="./img/chat.png" alt="ico call" width="80%">
+                        </div><br>
+                        <div class="txt-num">
+                            Chat <br> 021.123.145.14
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-tarjetas">
+                            Chat Now
+                        </button>
+                    </div>
+                </div>
+                <div class="tarjeta3">
+                    <div class="infotarjeta">
+                        <div class="icoLogo">
+                            <img src="./img/videocall.png" alt="ico call" width="80%">
+                        </div>
+                        <div class="txt-num">
+                            Video Call <br> 021.123.145.14
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-tarjetas">
+                            Video Call Now
+                        </button>
+                    </div>
+                </div>
+                <div class="tarjeta4">
+                    <div class="infotarjeta">
+                        <div class="icoLogo">
+                            <img src="./img/email.png" alt="ico call" width="80%">
+                        </div>
+                        <div class="txt-num">
+                            Message <br> 021.123.145.14
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-tarjetas">
+                            Message Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgContacto">
+            <img src="./img/imgDoctor.png" alt="img DoctorEmergencias">
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="navFooter">
+            <div class="disclaimer">
+                <h2>Vaccination</h2>
+                <p class="pDisclaimer">
+                    Our goal is to help the world free from the ongoing pandemic
+                </p>
+            </div>
+            <div class="about">
+                <h2>About</h2>
+                <ul>
+                    <li>About us</li>
+                    <li>Features</li>
+                    <li>News & Blog</li>
+                </ul>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <ul>
+                    <li>How We Work?</li>
+                    <li>Capital</li>
+                    <li>Security</li>
+                </ul>
+            </div>
+            <div class="support">
+                <h2>Support</h2>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Support Center</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <div class="fechaCopy">
+                <a href="#">@2021 Vacinnation. All rights reserved</a>
+            </div>
+            <div class="terminosCopy">
+                <a href="#">Terms & Agreements</a>
+            </div>
+            <div class="privacidadCopy">
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
