@@ -20,7 +20,7 @@
     <div class="container-txts">
         <div class="input-text">
             <div class="entry">
-                <textarea class="text-in" cols="30" rows="10" placeholder="Ingrese el texto aquí" id="text-in"></textarea>
+                <textarea class="text-in" cols="30" rows="10" placeholder="Ingrese el texto aquí" id="text-in" onkeypress="return soloLetras(event)"></textarea>
                 <div class="info">
                     <img src="./img/advertencia.png" alt="hint-input" class="icon-hint">
                     Solo letras minúsculas y sin acentos
@@ -35,6 +35,7 @@
             <img src="./img/Muñeco.svg" alt="img_no_content" width="100%" id="graph">
             <h2 style="text-align: center;" id="titulo">Ningun Mensaje fue encontrado</h2>
             <p style="text-align: center;" id="final-text" class="final-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            
             <button class="copy-button" id="copy-button">Copiar</button>
         </div>
     </div>
