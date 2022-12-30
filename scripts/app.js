@@ -13,23 +13,27 @@ copiar.addEventListener('click', async (event) => {
 })
 
 
-function validarMinusculas(letra) {
-    let invalidos = [
-        "A", "B", "C", "D", "E",
-        "F", "G", "H", "I", "J",
-        "K", "L", "M", "N", "O",
-        "P", "Q", "R", "S", "T",
-        "U", "V", "X", "Y", "Z",
-        "Á", "É", "Í", "Ó", "Ú",
-        "á", "é", "í", "ó", "ú"
-    ];
-    for (let j = 0; j < invalidos.length; j++) {
-        if (letra === invalidos[j]) {
-            alert("El caractér " + invalidos[j] + " es invalido, recuerde ingresar solo letras minúsculas y sin acentos");
-            return true;
+function soloLetras(e) {
+    var key = e.keyCode || e.which,
+        tecla = String.fromCharCode(key),
+        letras = " abcdefghijklmnñopqrstuvwxyz",
+        especiales = [8, 37, 39, 46],
+        tecla_especial = false;
+
+    for (let i in especiales) {
+        if (key == especiales[i]) {
+            tecla_especial = true;
+            break;
         }
     }
+
+    if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+        alert("Caractér invalido, recuerde ingresar solo letras minúsculas y sin acentos");
+        return false;
+    }
 }
+
+
 
 function imprimir(msg) {
     finalText.innerHTML = msg;
@@ -48,15 +52,11 @@ function encrypt() {
     let msg = document.getElementById('text-in').value;
     let letter = "";
     let msgEncrypted = "";
-    let validador = true;
 
     for (let i = 0; i < msg.length; i++) {
         letter = msg.charAt(i);
 
-        if(validarMinusculas(letter)){
-            validador = false;
-            break;
-        }else if (letter == "a") msgEncrypted = msgEncrypted + "ai"
+        if (letter == "a") msgEncrypted = msgEncrypted + "ai"
         else {
             if (letter == "e") msgEncrypted = msgEncrypted + "enter"
             else {
@@ -70,8 +70,8 @@ function encrypt() {
                 }
             }
         }
-    } 
-    if(validador) imprimir(msgEncrypted);
+    }
+    imprimir(msgEncrypted);
 
 }
 
@@ -79,15 +79,11 @@ function decrypt() {
     let msg = document.getElementById('text-in').value;
     let letter = "";
     let msgDecrypted = "";
-    let validador = true;
 
     for (let i = 0; i < msg.length; i++) {
         letter = msg.charAt(i);
 
-        if(validarMinusculas(letter)){
-            validador = false;
-            break;
-        }else if (letter == "a") {
+        if (letter == "a") {
             msgDecrypted = msgDecrypted + "a"
             i = i + 1;
         }
@@ -117,7 +113,7 @@ function decrypt() {
             }
         }
     }
-    if(validador) imprimir(msgDecrypted);
+    imprimir(msgDecrypted);
 }
 
 encryptButton.onclick = encrypt;
